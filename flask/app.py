@@ -14,6 +14,12 @@ def home():
 def index():
     return "<h1>welcome to index page <h1>"
 
+@app.route('/success/<score>')
+def success(score) :
+    return "your are pass and your score is : "+ score
+
+
+
 
 
 if __name__ == "__main__" :
